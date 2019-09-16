@@ -24,6 +24,6 @@ function myCourses() {
 
   // For loop to go through the arrays
   for (var i = 0; i < courseCat.length; i++) {
-    document.write(courseCat[i].bold() + courseNum[i].bold() + "-" + courseName[i];
+    document.write(courseCat[i].bold() + courseNum[i].bold() + "-" + courseName[i]);
   }
 }
