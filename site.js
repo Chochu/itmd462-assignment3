@@ -11,7 +11,11 @@ var self = {
 };
 
 // Display data from object self in the header
-document.getElementById("myHeader").innerHTML = self.fullOutput();
+//Wait for element to load before getting the myHeader element, else the code is ran before
+// the element is generated causing a null error
+window.onload = function () { 
+		document.getElementById("myHeader").innerHTML = self.fullOutput(); 
+}
 
 // Make function for my courses
 function myCourses() {
